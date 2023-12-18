@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 The Rockstar authors and contributors.
+  ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  -->
+
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+  android:duration="400"
+  android:interpolator="@android:interpolator/fast_out_slow_in"
+  android:propertyName="scaleY"
+  android:repeatCount="3"
+  android:repeatMode="reverse"
+  android:startOffset="200"
+  android:valueFrom="1"
+  android:valueTo="0"
+  android:valueType="floatType" />

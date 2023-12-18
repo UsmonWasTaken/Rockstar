@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 The Rockstar authors and contributors.
+  ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="24dp"
+  android:height="24dp"
+  android:tint="?attr/colorControlNormal"
+  android:viewportWidth="24"
+  android:viewportHeight="24">
+  <path
+    android:pathData="M9,12C9,12.796 9.316,13.559 9.879,14.121C10.441,14.684 11.204,15 12,15C12.796,15 13.559,14.684 14.121,14.121C14.684,13.559 15,12.796 15,12C15,11.204 14.684,10.441 14.121,9.879C13.559,9.316 12.796,9 12,9C11.204,9 10.441,9.316 9.879,9.879C9.316,10.441 9,11.204 9,12Z"
+    android:strokeWidth="1.5"
+    android:strokeColor="@android:color/white" />
+
+  <path
+    android:pathData="M13.6,21.076L19.06,17.924C19.644,17.587 19.935,17.419 20.147,17.184C20.334,16.976 20.476,16.73 20.563,16.464C20.66,16.163 20.66,15.827 20.66,15.157V8.843C20.66,8.173 20.66,7.837 20.562,7.536C20.475,7.269 20.333,7.024 20.146,6.816C19.936,6.582 19.646,6.414 19.067,6.08L13.6,2.924C13.017,2.587 12.726,2.419 12.416,2.354C12.142,2.296 11.858,2.296 11.584,2.354C11.274,2.419 10.983,2.587 10.4,2.924L4.938,6.077C4.356,6.413 4.065,6.581 3.854,6.816C3.666,7.024 3.525,7.269 3.438,7.536C3.34,7.838 3.34,8.174 3.34,8.847V15.152C3.34,15.825 3.34,16.162 3.438,16.463C3.525,16.729 3.666,16.975 3.854,17.183C4.065,17.419 4.357,17.587 4.939,17.923L10.399,21.076C10.983,21.413 11.274,21.581 11.584,21.646C11.858,21.705 12.142,21.705 12.416,21.646C12.726,21.581 13.017,21.413 13.6,21.076Z"
+    android:strokeWidth="1.5"
+    android:strokeColor="@android:color/white" />
+</vector>

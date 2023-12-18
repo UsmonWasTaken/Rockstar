@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 The Rockstar authors and contributors.
+  ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  -->
+
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/state_on"
+    android:drawable="@drawable/ic_playlist"
+    android:state_checked="true" />
+  <item
+    android:id="@+id/state_off"
+    android:drawable="@drawable/ic_playlist" />
+  <transition
+    android:drawable="@drawable/avd_playlist"
+    android:fromId="@+id/state_off"
+    android:toId="@+id/state_on" />
+</animated-selector>

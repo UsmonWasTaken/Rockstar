@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 The Rockstar authors and contributors.
+  ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="24dp"
+  android:height="24dp"
+  android:tint="?attr/colorControlNormal"
+  android:viewportWidth="24"
+  android:viewportHeight="24">
+  <path
+    android:fillColor="@android:color/white"
+    android:pathData="M4.5,10.875C4.5,7.354 7.354,4.5 10.875,4.5C14.396,4.5 17.25,7.354 17.25,10.875C17.25,14.396 14.396,17.25 10.875,17.25C7.354,17.25 4.5,14.396 4.5,10.875ZM10.875,3C6.526,3 3,6.526 3,10.875C3,15.224 6.526,18.75 10.875,18.75C12.783,18.75 14.532,18.072 15.895,16.943C15.917,16.974 15.942,17.003 15.97,17.03L20.47,21.53C20.763,21.823 21.237,21.823 21.53,21.53C21.823,21.237 21.823,20.763 21.53,20.47L17.03,15.97C17.003,15.942 16.974,15.917 16.943,15.895C18.072,14.532 18.75,12.783 18.75,10.875C18.75,6.526 15.224,3 10.875,3Z" />
+</vector>
