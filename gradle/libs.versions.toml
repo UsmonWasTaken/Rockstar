@@ -14,6 +14,8 @@ androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragme
 
 google-material = { module = "com.google.android.material:material", version = "1.11.0" }
 
+kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version = "0.3.6" }
+
 squareup-logcat = { module = "com.squareup.logcat:logcat", version = "0.1" }
 
 [plugins]

@@ -69,5 +69,7 @@ dependencies {
 
   implementation(libs.google.material)
 
+  implementation(libs.kotlinx.collections.immutable)
+
   implementation(libs.squareup.logcat)
 }
