@@ -40,6 +40,10 @@ android {
     }
   }
 
+  buildFeatures {
+    viewBinding = true
+  }
+
   compileOptions {
     isCoreLibraryDesugaringEnabled = true
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -64,4 +68,6 @@ dependencies {
   implementation(libs.androidx.navigation.runtime)
 
   implementation(libs.google.material)
+
+  implementation(libs.squareup.logcat)
 }
