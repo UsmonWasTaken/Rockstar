@@ -6,8 +6,10 @@
 package app.rockstar.android
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 import logcat.AndroidLogcatLogger
 
+@HiltAndroidApp
 class RockstarApplication : Application() {
 
   override fun onCreate() {

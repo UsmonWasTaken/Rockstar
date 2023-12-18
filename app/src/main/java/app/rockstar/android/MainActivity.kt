@@ -14,7 +14,9 @@ import androidx.navigation.NavHost
 import androidx.navigation.ui.setupWithNavController
 import app.rockstar.android.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
   private lateinit var navController: NavController

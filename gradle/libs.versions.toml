@@ -1,5 +1,6 @@
 [versions]
 navigation = "2.7.6"
+hilt = "2.49"
 
 [libraries]
 android-desugarJdkLibs = { module = "com.android.tools:desugar_jdk_libs", version = "2.0.4" }
@@ -13,6 +14,8 @@ androidx-navigation-runtime = { module = "androidx.navigation:navigation-runtime
 androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
 
 google-material = { module = "com.google.android.material:material", version = "1.11.0" }
+google-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+google-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 
 kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version = "0.3.6" }
 
@@ -21,4 +24,6 @@ squareup-logcat = { module = "com.squareup.logcat:logcat", version = "0.1" }
 [plugins]
 android-application = { id = "com.android.application", version = "8.2.0" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.9.21" }
+ksp = { id = "com.google.devtools.ksp", version = "1.9.21-1.0.15" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 
