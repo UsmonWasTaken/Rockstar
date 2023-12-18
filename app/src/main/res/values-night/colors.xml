@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 The Rockstar authors and contributors.
+  ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  -->
+
+<resources>
+  <color name="primary">#79DA9F</color>
+  <color name="onPrimary">#00391F</color>
+  <color name="primaryContainer">#00522F</color>
+  <color name="onPrimaryContainer">#95F7B9</color>
+  <color name="secondary">#B5CCBA</color>
+  <color name="onSecondary">#213528</color>
+  <color name="secondaryContainer">#374B3D</color>
+  <color name="onSecondaryContainer">#D1E8D5</color>
+  <color name="tertiary">#A3CDDB</color>
+  <color name="onTertiary">#033641</color>
+  <color name="tertiaryContainer">#214C58</color>
+  <color name="onTertiaryContainer">#BFE9F8</color>
+  <color name="error">#FFB4AB</color>
+  <color name="errorContainer">#93000A</color>
+  <color name="onError">#690005</color>
+  <color name="onErrorContainer">#FFDAD6</color>
+  <color name="background">#191C1A</color>
+  <color name="onBackground">#E1E3DE</color>
+  <color name="surface">#191C1A</color>
+  <color name="onSurface">#E1E3DE</color>
+  <color name="surfaceVariant">#414942</color>
+  <color name="onSurfaceVariant">#C0C9C0</color>
+  <color name="outline">#8A938B</color>
+  <color name="inverseOnSurface">#191C1A</color>
+  <color name="inverseSurface">#E1E3DE</color>
+  <color name="inversePrimary">#006D40</color>
+  <color name="shadow">#000000</color>
+  <color name="surfaceTint">#79DA9F</color>
+  <color name="outlineVariant">#414942</color>
+  <color name="scrim">#000000</color>
+
+  <!-- 8% opacity of the primary color -->
+  <color name="navigationBar">#1479DA9F</color>
+</resources>
