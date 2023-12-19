@@ -24,7 +24,7 @@
 
   <fragment
     android:id="@+id/fragment_albums"
-    android:name="app.rockstar.feature.albums.AlbumsFragment"
+    android:name="app.rockstar.feature.albums.list.AlbumsFragment"
     android:label="@string/label_albums"
     tools:layout="@layout/fragment_albums" />
 
