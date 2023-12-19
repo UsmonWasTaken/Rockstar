@@ -32,14 +32,14 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="12dp"
     android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-    app:layout_constraintBottom_toTopOf="@id/subtitle"
+    app:layout_constraintBottom_toTopOf="@id/artist"
     app:layout_constraintEnd_toStartOf="@id/more"
     app:layout_constraintStart_toEndOf="@id/album_cover"
     app:layout_constraintTop_toTopOf="parent"
     tools:text="@tools:sample/cities" />
 
   <TextView
-    android:id="@+id/subtitle"
+    android:id="@+id/artist"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:textAppearance="@style/TextAppearance.Material3.BodySmall"

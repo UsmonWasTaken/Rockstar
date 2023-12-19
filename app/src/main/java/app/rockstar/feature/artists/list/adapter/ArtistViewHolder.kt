@@ -15,10 +15,13 @@ internal class ArtistViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
 
   fun onBindView(artist: ArtistListItem) = with(binding) {
-    if (artist.artistImage != Uri.EMPTY) artistImage.setImageURI(artist.artistImage)
-    else artistImage.setImageResource(R.drawable.default_artist_image)
-
     artistName.text = artist.artistName
+
+    if (artist.artistImageUri != Uri.EMPTY) {
+      artistImage.setImageURI(artist.artistImageUri)
+    } else {
+      artistImage.setImageResource(R.drawable.default_artist_image)
+    }
 
     root.setOnClickListener { artist.onItemClicked() }
   }
