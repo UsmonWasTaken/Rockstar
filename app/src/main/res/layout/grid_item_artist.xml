@@ -36,8 +36,9 @@
     android:ellipsize="end"
     android:maxLines="1"
     android:paddingHorizontal="8dp"
+    android:paddingBottom="8dp"
     android:textAlignment="center"
-    android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
     tools:text="@tools:sample/full_names" />
 
 </LinearLayout>

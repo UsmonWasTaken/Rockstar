@@ -30,7 +30,7 @@
 
   <fragment
     android:id="@+id/fragment_artists"
-    android:name="app.rockstar.feature.artists.ArtistsFragment"
+    android:name="app.rockstar.feature.artists.list.ArtistsFragment"
     android:label="@string/label_artists"
     tools:layout="@layout/fragment_artists" />
 
