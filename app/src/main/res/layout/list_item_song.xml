@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 The Rockstar authors and contributors.
+  ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="?selectableItemBackground"
+  android:clickable="true"
+  android:focusable="true"
+  android:padding="8dp">
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/album_cover"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:scaleType="centerCrop"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/name"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shapeAppearance="?shapeAppearanceCornerMedium"
+    tools:src="@tools:sample/avatars" />
+
+  <TextView
+    android:id="@+id/name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+    app:layout_constraintBottom_toTopOf="@id/artist"
+    app:layout_constraintEnd_toStartOf="@id/more"
+    app:layout_constraintStart_toEndOf="@id/album_cover"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="@tools:sample/cities" />
+
+  <TextView
+    android:id="@+id/artist"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@id/name"
+    app:layout_constraintStart_toStartOf="@id/name"
+    app:layout_constraintTop_toBottomOf="@id/name"
+    tools:text="@tools:sample/full_names" />
+
+  <ImageView
+    android:id="@+id/more"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:background="?selectableItemBackgroundBorderless"
+    android:src="@drawable/ic_more"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/name"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

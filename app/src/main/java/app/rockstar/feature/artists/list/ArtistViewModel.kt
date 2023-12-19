@@ -35,8 +35,8 @@ internal class ArtistViewModel @Inject constructor(
   private fun mapToListItems(artists: List<Artist>) = artists.map { artist ->
     ArtistListItem(
       id = artist.id,
-      artistImage = Uri.EMPTY,
       artistName = artist.name,
+      artistImageUri = Uri.EMPTY,
       onItemClicked = {
         logcat { "$artist has just clicked." }
       },

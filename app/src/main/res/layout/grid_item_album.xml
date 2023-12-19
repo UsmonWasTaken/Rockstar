@@ -9,32 +9,28 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:orientation="vertical">
+  android:background="?selectableItemBackground"
+  android:clickable="true"
+  android:focusable="true"
+  android:orientation="vertical"
+  android:padding="8dp">
 
-  <com.google.android.material.card.MaterialCardView
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/album_cover"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardUseCompatPadding="true"
-    app:strokeWidth="0dp">
-
-    <ImageView
-      android:id="@+id/album_cover"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:adjustViewBounds="true"
-      android:scaleType="centerCrop"
-      tools:ignore="ContentDescription"
-      tools:src="@tools:sample/backgrounds/scenic" />
-
-  </com.google.android.material.card.MaterialCardView>
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    app:shapeAppearance="?shapeAppearanceCornerMedium"
+    tools:src="@tools:sample/backgrounds/scenic" />
 
   <TextView
     android:id="@+id/album_name"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
     android:ellipsize="end"
     android:maxLines="1"
-    android:paddingHorizontal="8dp"
     android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
     tools:text="@tools:sample/full_names" />
 
@@ -45,8 +41,6 @@
     android:layout_height="wrap_content"
     android:ellipsize="end"
     android:maxLines="1"
-    android:paddingHorizontal="8dp"
-    android:paddingBottom="8dp"
     android:textAppearance="@style/TextAppearance.Material3.BodySmall"
     tools:text="@tools:sample/full_names" />
 </LinearLayout>
