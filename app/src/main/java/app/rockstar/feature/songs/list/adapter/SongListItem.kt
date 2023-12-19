@@ -9,7 +9,7 @@ import android.net.Uri
 
 internal data class SongListItem(
   val id: Long,
-  val title: String,
+  val name: String,
   val artist: String,
   val albumCoverUri: Uri,
   val onItemClicked: () -> Unit,

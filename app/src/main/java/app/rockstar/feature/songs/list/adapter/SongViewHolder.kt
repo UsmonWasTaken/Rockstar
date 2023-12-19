@@ -15,7 +15,7 @@ internal class SongViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
 
   fun onBindView(song: SongListItem) = with(binding) {
-    title.text = song.title
+    name.text = song.name
     artist.text = song.artist
 
     if (song.albumCoverUri != Uri.EMPTY) {

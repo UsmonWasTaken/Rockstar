@@ -18,7 +18,7 @@
 
   <fragment
     android:id="@+id/fragment_songs"
-    android:name="app.rockstar.feature.songs.SongsFragment"
+    android:name="app.rockstar.feature.songs.list.SongsFragment"
     android:label="@string/label_songs"
     tools:layout="@layout/fragment_songs" />
 
