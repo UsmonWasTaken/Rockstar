@@ -34,6 +34,7 @@
     <item name="colorPrimaryInverse">@color/inversePrimary</item>
 
     <item name="bottomNavigationStyle">@style/BottomNavigationStyle</item>
+    <item name="shapeAppearanceCornerless">@style/ShapeAppearance.Rockstar.Cornerless</item>
 
     <item name="android:statusBarColor">?colorSurface</item>
     <item name="android:navigationBarColor">@color/navigationBar</item>
@@ -43,6 +44,13 @@
 
   <style name="BottomNavigationStyle" parent="Widget.Material3.BottomNavigationView">
     <item name="android:background">@color/navigationBar</item>
+  </style>
+
+  <attr name="shapeAppearanceCornerless" format="reference" />
+
+  <style name="ShapeAppearance.Rockstar.Cornerless" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">50%</item>
   </style>
 
 </resources>
