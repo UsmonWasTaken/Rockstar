@@ -29,14 +29,14 @@
       android:ellipsize="end"
       android:maxLines="1"
       android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-      app:layout_constraintBottom_toTopOf="@id/songs_count"
+      app:layout_constraintBottom_toTopOf="@id/song_count"
       app:layout_constraintEnd_toStartOf="@id/album_cover_preview"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       tools:text="@tools:sample/first_names" />
 
     <TextView
-      android:id="@+id/songs_count"
+      android:id="@+id/song_count"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:textAppearance="@style/TextAppearance.Material3.BodySmall"
