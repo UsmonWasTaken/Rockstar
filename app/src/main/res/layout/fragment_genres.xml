@@ -4,18 +4,35 @@
   ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
   -->
 
-<FrameLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   tools:theme="@style/Theme.Rockstar.Default">
 
-  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:text="@string/label_genres"
-    android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-</FrameLayout>
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+      app:title="@string/label_genres"
+      app:titleCentered="true" />
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls"
+    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:spanCount="2"
+    tools:listitem="@layout/grid_item_genre" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

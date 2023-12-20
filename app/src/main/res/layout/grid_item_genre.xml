@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 The Rockstar authors and contributors.
+  ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="120dp"
+  android:background="?selectableItemBackground"
+  android:clickable="true"
+  android:focusable="true"
+  app:cardCornerRadius="8dp"
+  app:cardElevation="1dp"
+  app:cardUseCompatPadding="true">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+      android:id="@+id/name"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+      app:layout_constraintBottom_toTopOf="@id/songs_count"
+      app:layout_constraintEnd_toStartOf="@id/album_cover_preview"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="@tools:sample/first_names" />
+
+    <TextView
+      android:id="@+id/songs_count"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+      app:layout_constraintEnd_toEndOf="@id/name"
+      app:layout_constraintStart_toStartOf="@id/name"
+      app:layout_constraintTop_toBottomOf="@id/name"
+      tools:text="@string/n_songs" />
+
+    <ImageView
+      android:id="@+id/album_cover_preview"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:rotation="30"
+      android:translationX="16dp"
+      android:translationY="8dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      tools:ignore="ContentDescription"
+      tools:src="@tools:sample/avatars" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
