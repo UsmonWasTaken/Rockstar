@@ -9,7 +9,7 @@ import android.net.Uri
 
 internal data class ArtistListItem(
   val id: Long,
-  val artistName: String,
-  val artistImageUri: Uri,
+  val name: String,
+  val imageUri: Uri,
   val onItemClicked: () -> Unit,
 )

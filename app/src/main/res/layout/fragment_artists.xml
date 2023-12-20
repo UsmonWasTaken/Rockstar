@@ -26,10 +26,11 @@
   </com.google.android.material.appbar.AppBarLayout>
 
   <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/artists_list_view"
+    android:id="@+id/list_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
+    android:overScrollMode="ifContentScrolls"
     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     app:spanCount="2"

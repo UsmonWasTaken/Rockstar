@@ -35,9 +35,9 @@ internal class AlbumsViewModel @Inject constructor(
   private fun mapToListItems(albums: ImmutableList<Album>) = albums.map { album ->
     AlbumListItem(
       id = album.id,
+      name = album.name,
+      artist = album.artist,
       coverUri = Uri.EMPTY,
-      albumName = album.name,
-      albumArtist = album.albumArtist,
       onItemClicked = {
         logcat { "$album has just clicked." }
       },

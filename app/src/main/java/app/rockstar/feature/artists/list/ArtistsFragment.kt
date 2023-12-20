@@ -27,7 +27,7 @@ class ArtistsFragment : Fragment(R.layout.fragment_artists) {
     val binding = FragmentArtistsBinding.bind(view)
 
     val artistListAdapter = ArtistListAdapter()
-    binding.artistsListView.adapter = artistListAdapter
+    binding.listView.adapter = artistListAdapter
 
     viewModel.artistItemsStateFlow
       .flowWithLifecycle(viewLifecycleOwner.lifecycle)

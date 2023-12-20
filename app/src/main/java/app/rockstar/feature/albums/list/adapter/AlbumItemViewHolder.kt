@@ -15,11 +15,14 @@ internal class AlbumItemViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
 
   fun onBindView(album: AlbumListItem) = with(binding) {
-    if (album.coverUri != Uri.EMPTY) albumCover.setImageURI(album.coverUri)
-    else albumCover.setImageResource(R.drawable.default_album_cover)
+    name.text = album.name
+    artist.text = album.artist
 
-    albumName.text = album.albumName
-    albumArtist.text = album.albumArtist
+    if (album.coverUri != Uri.EMPTY) {
+      cover.setImageURI(album.coverUri)
+    } else {
+      cover.setImageResource(R.drawable.default_album_cover)
+    }
 
     root.setOnClickListener { album.onItemClicked() }
   }

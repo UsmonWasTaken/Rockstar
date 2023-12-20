@@ -9,8 +9,8 @@ import android.net.Uri
 
 internal data class AlbumListItem(
   val id: Long,
+  val name: String,
+  val artist: String,
   val coverUri: Uri,
-  val albumName: String,
-  val albumArtist: String,
   val onItemClicked: () -> Unit,
 )

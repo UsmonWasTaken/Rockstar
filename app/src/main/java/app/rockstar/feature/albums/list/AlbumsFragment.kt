@@ -27,7 +27,7 @@ class AlbumsFragment : Fragment(R.layout.fragment_albums) {
     val binding = FragmentAlbumsBinding.bind(view)
 
     val albumsListAdapter = AlbumListAdapter()
-    binding.albumsListView.adapter = albumsListAdapter
+    binding.listView.adapter = albumsListAdapter
 
     viewModel.albumItemsStateFlow
       .flowWithLifecycle(viewLifecycleOwner.lifecycle)
