@@ -27,7 +27,7 @@ class SongsFragment : Fragment(R.layout.fragment_songs) {
     val binding = FragmentSongsBinding.bind(view)
 
     val songsListAdapter = SongListAdapter()
-    binding.songsListView.adapter = songsListAdapter
+    binding.listView.adapter = songsListAdapter
 
     viewModel.songItemsStateFlow
       .flowWithLifecycle(viewLifecycleOwner.lifecycle)

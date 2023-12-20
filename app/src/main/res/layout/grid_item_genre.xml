@@ -8,62 +8,51 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="wrap_content"
+  android:layout_height="120dp"
   app:cardUseCompatPadding="true"
   app:strokeWidth="0dp"
   tools:theme="@style/Theme.Rockstar.Default">
 
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingHorizontal="8dp"
-    android:paddingVertical="4dp">
-
-    <com.google.android.material.imageview.ShapeableImageView
-      android:id="@+id/album_cover"
-      android:layout_width="56dp"
-      android:layout_height="56dp"
-      android:scaleType="centerCrop"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@id/name"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:shapeAppearance="?shapeAppearanceCornerMedium"
-      tools:src="@tools:sample/avatars" />
+    android:layout_height="match_parent">
 
     <com.google.android.material.textview.MaterialTextView
       android:id="@+id/name"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginStart="12dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:ellipsize="end"
+      android:maxLines="1"
       android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-      app:layout_constraintBottom_toTopOf="@id/artist"
-      app:layout_constraintEnd_toStartOf="@id/more"
-      app:layout_constraintStart_toEndOf="@id/album_cover"
+      app:layout_constraintBottom_toTopOf="@id/song_count"
+      app:layout_constraintEnd_toStartOf="@id/album_cover"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      tools:text="@tools:sample/cities" />
+      tools:text="@tools:sample/first_names" />
 
     <com.google.android.material.textview.MaterialTextView
-      android:id="@+id/artist"
+      android:id="@+id/song_count"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:textAppearance="@style/TextAppearance.Material3.BodySmall"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="@id/name"
       app:layout_constraintStart_toStartOf="@id/name"
       app:layout_constraintTop_toBottomOf="@id/name"
-      tools:text="@tools:sample/full_names" />
+      tools:text="@tools:sample/last_names" />
 
     <ImageView
-      android:id="@+id/more"
-      android:layout_width="24dp"
-      android:layout_height="24dp"
-      android:src="@drawable/ic_more"
+      android:id="@+id/album_cover"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:rotation="30"
+      android:translationX="16dp"
+      android:translationY="8dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toEndOf="@id/name"
-      app:layout_constraintTop_toTopOf="parent"
-      tools:ignore="ContentDescription" />
+      tools:ignore="ContentDescription"
+      tools:src="@tools:sample/avatars" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 

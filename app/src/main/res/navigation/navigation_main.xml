@@ -42,7 +42,7 @@
 
   <fragment
     android:id="@+id/fragment_genres"
-    android:name="app.rockstar.feature.genres.GenresFragment"
+    android:name="app.rockstar.feature.genres.list.GenresFragment"
     android:label="@string/label_genres"
     tools:layout="@layout/fragment_genres" />
 

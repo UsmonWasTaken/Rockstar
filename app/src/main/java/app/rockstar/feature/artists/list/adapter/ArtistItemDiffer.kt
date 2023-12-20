@@ -14,7 +14,7 @@ internal object ArtistItemDiffer : DiffUtil.ItemCallback<ArtistListItem>() {
   }
 
   override fun areContentsTheSame(oldItem: ArtistListItem, newItem: ArtistListItem): Boolean {
-    return oldItem.artistImageUri == newItem.artistImageUri &&
-      oldItem.artistName == newItem.artistName
+    return oldItem.name == newItem.name &&
+      oldItem.imageUri == newItem.imageUri
   }
 }
