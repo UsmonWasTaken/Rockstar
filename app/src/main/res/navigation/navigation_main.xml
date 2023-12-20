@@ -36,7 +36,7 @@
 
   <fragment
     android:id="@+id/fragment_playlists"
-    android:name="app.rockstar.feature.playlists.PlaylistsFragment"
+    android:name="app.rockstar.feature.playlists.list.PlaylistsFragment"
     android:label="@string/label_playlists"
     tools:layout="@layout/fragment_playlists" />
 
