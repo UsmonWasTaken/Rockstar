@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 The Rockstar authors and contributors.
+  ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  -->
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  app:cardUseCompatPadding="true"
+  app:strokeWidth="0dp"
+  tools:theme="@style/Theme.Rockstar.Default">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+      android:id="@+id/album_cover"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:adjustViewBounds="true"
+      android:scaleType="centerCrop"
+      app:shapeAppearance="?shapeAppearanceCornerMedium"
+      tools:src="@tools:sample/backgrounds/scenic" />
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="8dp"
+      android:layout_marginTop="8dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+      tools:text="@tools:sample/full_names" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/number_of_songs"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="8dp"
+      android:layout_marginBottom="8dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+      tools:text="@tools:sample/last_names" />
+
+  </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
