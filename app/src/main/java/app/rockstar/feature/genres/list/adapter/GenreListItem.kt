@@ -10,7 +10,7 @@ import android.net.Uri
 internal data class GenreListItem(
   val id: Long,
   val name: String,
-  val songCount: Int,
-  val albumCoverPreviewUri: Uri,
+  val numberOfSongs: Int,
+  val albumCoverUri: Uri,
   val onItemClicked: () -> Unit,
 )

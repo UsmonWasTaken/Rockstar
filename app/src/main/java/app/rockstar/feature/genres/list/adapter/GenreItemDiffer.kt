@@ -15,7 +15,7 @@ internal object GenreItemDiffer : DiffUtil.ItemCallback<GenreListItem>() {
 
   override fun areContentsTheSame(oldItem: GenreListItem, newItem: GenreListItem): Boolean {
     return oldItem.name == newItem.name &&
-      oldItem.songCount == newItem.songCount &&
-      oldItem.albumCoverPreviewUri == newItem.albumCoverPreviewUri
+      oldItem.numberOfSongs == newItem.numberOfSongs &&
+      oldItem.albumCoverUri == newItem.albumCoverUri
   }
 }

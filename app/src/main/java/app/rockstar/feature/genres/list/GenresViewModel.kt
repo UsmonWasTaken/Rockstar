@@ -36,8 +36,8 @@ internal class GenresViewModel @Inject constructor(
     GenreListItem(
       id = genre.id,
       name = genre.name,
-      songCount = genre.numberOfSongs,
-      albumCoverPreviewUri = Uri.EMPTY,
+      numberOfSongs = genre.numberOfSongs,
+      albumCoverUri = Uri.EMPTY,
       onItemClicked = {
         logcat { "$genre item is clicked" }
       },

@@ -16,10 +16,15 @@ internal class GenreViewHolder(
 
   fun onBindView(genre: GenreListItem) = with(binding) {
     name.text = genre.name
-    songCount.text = songCount.resources.getString(R.string.n_songs, genre.songCount)
+    songCount.text = songCount.resources.getQuantityString(
+      R.plurals.number_of_songs,
+      genre.numberOfSongs,
+      genre.numberOfSongs,
+    )
 
-    if (genre.albumCoverPreviewUri != Uri.EMPTY) {
-      albumCoverPreview.setImageURI(genre.albumCoverPreviewUri)
+    if (genre.albumCoverUri != Uri.EMPTY) {
+      albumCover.setImageURI(genre.albumCoverUri)
+      // TODO: Set background and text colors based on album cover
     } else {
       // TODO: Set default genre preview image
     }

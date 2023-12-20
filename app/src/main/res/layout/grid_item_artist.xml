@@ -4,35 +4,40 @@
   ~ Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:background="?selectableItemBackground"
-  android:clickable="true"
-  android:focusable="true"
-  android:orientation="vertical"
-  android:padding="8dp">
+  app:cardUseCompatPadding="true"
+  app:strokeWidth="0dp"
+  tools:theme="@style/Theme.Rockstar.Default">
 
-  <com.google.android.material.imageview.ShapeableImageView
-    android:id="@+id/image"
+  <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:adjustViewBounds="true"
-    android:scaleType="centerCrop"
-    app:shapeAppearance="?shapeAppearanceCornerless"
-    tools:src="@tools:sample/avatars" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
 
-  <TextView
-    android:id="@+id/name"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:ellipsize="end"
-    android:maxLines="1"
-    android:textAlignment="center"
-    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-    tools:text="@tools:sample/full_names" />
+    <com.google.android.material.imageview.ShapeableImageView
+      android:id="@+id/image"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:adjustViewBounds="true"
+      android:scaleType="centerCrop"
+      app:shapeAppearance="?shapeAppearanceCornerless"
+      tools:src="@tools:sample/avatars" />
 
-</LinearLayout>
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+      tools:text="@tools:sample/full_names" />
+
+  </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
